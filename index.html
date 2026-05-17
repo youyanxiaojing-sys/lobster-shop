@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>龙虾API商店 · 买Key送龙虾安装包</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Microsoft YaHei', sans-serif; background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%); color: #e0e0e0; min-height: 100vh; }
+.container { max-width: 700px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; padding: 40px 0 20px; }
+.header h1 { font-size: 2.2em; background: linear-gradient(90deg, #ff6b6b, #ffd93d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.header p { color: #888; margin-top: 10px; font-size: 1.1em; }
+.card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; margin: 20px 0; }
+.card h2 { color: #ff6b6b; margin-bottom: 15px; }
+.price-box { text-align: center; padding: 30px 0; }
+.price { font-size: 3em; color: #ffd93d; font-weight: bold; }
+.price small { font-size: 0.4em; color: #888; }
+.features { list-style: none; padding: 0; }
+.features li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.features li:before { content: '✓ '; color: #51cf66; font-weight: bold; }
+.qr-box { text-align: center; padding: 20px; }
+.qr-box img { width: 200px; height: 200px; border: 2px solid rgba(255,255,255,0.2); border-radius: 12px; }
+.qr-hint { color: #ff6b6b; font-size: 0.9em; margin-top: 10px; }
+.steps { background: rgba(255,107,107,0.1); border-radius: 12px; padding: 25px; margin: 20px 0; }
+.steps h3 { color: #ffd93d; margin-bottom: 15px; }
+.steps ol { padding-left: 20px; line-height: 2; }
+.steps ol li { color: #ccc; }
+.contact { text-align: center; padding: 30px; color: #888; }
+.contact a { color: #ff6b6b; }
+@media (max-width: 500px) {
+  .header h1 { font-size: 1.5em; }
+  .price { font-size: 2em; }
+  .card { padding: 20px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>龙虾 API 商店</h1>
+    <p>DeepSeek API Key · 即买即用 · 配一键安装包</p>
+  </div>
+
+  <!-- 套餐1 -->
+  <div class="card">
+    <h2>套餐一：API Key 单买</h2>
+    <div class="price-box">
+      <div class="price">15<span style="font-size:0.5em">元</span> <small>/ 含10元余额</small></div>
+    </div>
+    <ul class="features">
+      <li>DeepSeek API Key 一个（已充值10元）</li>
+      <li>复制粘贴就能用，无需注册</li>
+      <li>正常使用约可用2-3个月</li>
+      <li>送龙虾一键安装包（免费版）</li>
+    </ul>
+  </div>
+
+  <!-- 套餐2 -->
+  <div class="card">
+    <h2>套餐二：龙虾商业版 + Key 套装</h2>
+    <div class="price-box">
+      <div class="price">49<span style="font-size:0.5em">元</span> <small>/ 一键拥有AI助理</small></div>
+    </div>
+    <ul class="features">
+      <li>龙虾一键安装包（商业版）</li>
+      <li>DeepSeek API Key 一个（已充值10元）</li>
+      <li>专属许可证（一机一码）</li>
+      <li>远程协助安装一次</li>
+      <li>永久免费更新</li>
+    </ul>
+  </div>
+
+  <!-- 购买步骤 -->
+  <div class="steps">
+    <h3>购买方法（3步）</h3>
+    <ol>
+      <li><strong>扫码付款</strong>：下方二维码，付对应金额</li>
+      <li><strong>发截图</strong>：付款后点下方按钮，把截图发给我</li>
+      <li><strong>收Key</strong>：我确认后立即发 Key 和安装包</li>
+    </ol>
+  </div>
+
+  <!-- 付款码 -->
+  <div class="card">
+    <h2>付款二维码</h2>
+    <div class="qr-box">
+      <!-- 替换成你自己的收款码 -->
+      <img src="qrcode.png" alt="付款码" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <div class="qr-hint" style="display:none">请将你的微信/支付宝收款码截图，命名为 qrcode.png 放到同目录下</div>
+      <p style="color:#888;font-size:0.8em;margin-top:10px;">微信/支付宝扫码付款</p>
+    </div>
+  </div>
+
+  <!-- 联系按钮 -->
+  <div class="contact">
+    <p>付款后点下方按钮联系我 👇</p>
+    <a href="https://work.weixin.qq.com/" style="display:inline-block;background:#ff6b6b;color:#fff;padding:15px 40px;border-radius:30px;text-decoration:none;font-size:1.1em;margin:15px 0;">发付款截图 → 获取 Key</a>
+    <p style="margin-top:20px;font-size:0.85em;color:#666;">
+      不会操作？加我微信手把手教你<br>
+      craft by 悠修修
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
